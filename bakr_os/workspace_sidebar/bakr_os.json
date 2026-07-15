@@ -1,0 +1,27 @@
+{
+ "app": "bakr_os",
+ "creation": "2026-07-15 14:29:37.057802",
+ "docstatus": 0,
+ "doctype": "Workspace Sidebar",
+ "header_icon": "satellite",
+ "idx": 0,
+ "items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "BAKR OS",
+   "link_to": "BAKR OS",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-07-15 16:45:22.475405",
+ "modified_by": "Administrator",
+ "name": "BAKR OS",
+ "owner": "Administrator",
+ "standard": 1,
+ "title": "BAKR OS"
+}

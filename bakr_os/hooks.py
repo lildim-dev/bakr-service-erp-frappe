@@ -5,6 +5,11 @@ app_description = "Business Operations Platform for BAKR GPS & Service"
 app_email = "xaritonovdima@gmail.com"
 app_license = "mit"
 
+
+
+
+
+
 # Apps
 # ------------------
 
