@@ -5,7 +5,12 @@ app_description = "Business Operations Platform for BAKR GPS & Service"
 app_email = "xaritonovdima@gmail.com"
 app_license = "mit"
 
-
+doc_events = {
+    "*": {
+        "before_submit": "bakr_os.events.prevent_invalid_submit",
+        "before_cancel": "bakr_os.events.prevent_invalid_cancel",
+    }
+}
 
 
 
