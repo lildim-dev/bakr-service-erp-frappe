@@ -1,6 +1,6 @@
 {
  "app": "bakr_os",
- "creation": "2026-07-15 14:29:37.057802",
+ "creation": "2026-07-15 16:47:00.056806",
  "docstatus": 0,
  "doctype": "Workspace Sidebar",
  "header_icon": "satellite",
@@ -9,6 +9,7 @@
   {
    "child": 0,
    "collapsible": 1,
+   "icon": "boxes",
    "indent": 0,
    "keep_closed": 0,
    "label": "BAKR OS",
@@ -16,10 +17,23 @@
    "link_type": "Workspace",
    "show_arrow": 0,
    "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "book-open-text",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u0438",
+   "link_to": "Reference",
+   "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
   }
  ],
- "modified": "2026-07-15 16:45:22.475405",
+ "modified": "2026-07-16 13:23:58.890793",
  "modified_by": "Administrator",
+ "module": "BAKR OS",
  "name": "BAKR OS",
  "owner": "Administrator",
  "standard": 1,
