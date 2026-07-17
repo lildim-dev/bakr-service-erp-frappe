@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_bulk_edit": 1,
- "allow_rename": 1,
+ "autoname": "INS-.#####",
  "creation": "2026-07-17 12:26:27.094872",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -14,29 +14,25 @@
   "status",
   "section_break_qwe",
   "tracker_serial_no",
-  "tracker_item",
-  "sim_number",
   "column_break_emff",
-  "iccid",
-  "sim_card",
-  "sim_tariff",
+  "tracker_item",
   "section_break_auto",
   "vin",
   "vehicle_brand",
   "vehicle_model",
   "vehicle_year",
-  "vehicle_color",
   "column_break_widh",
   "owner_name",
-  "license_plate",
   "owner_phone",
+  "license_plate",
+  "vehicle_color",
   "\u0431\u0430\u043d\u043a_\u0438_\u043a\u0440\u0435\u0434\u0438\u0442_section",
   "bank",
-  "loan_end_date",
+  "loan_term_months",
   "loan_agreement_number",
   "column_break_hucu",
   "loan_start_date",
-  "loan_term_months"
+  "loan_end_date"
  ],
  "fields": [
   {
@@ -87,34 +83,6 @@
    "fieldtype": "Link",
    "label": "\u041c\u043e\u0434\u0435\u043b\u044c \u0442\u0440\u0435\u043a\u0435\u0440\u0430",
    "options": "Item",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sim_card",
-   "fieldtype": "Link",
-   "label": "SIM-\u043a\u0430\u0440\u0442\u0430",
-   "options": "Sim Card",
-   "read_only": 1
-  },
-  {
-   "fieldname": "iccid",
-   "fieldtype": "Data",
-   "label": "ICCID",
-   "read_only": 1
-  },
-  {
-   "fetch_from": "sim_card.phone_number",
-   "fieldname": "sim_number",
-   "fieldtype": "Link",
-   "label": "\u041d\u043e\u043c\u0435\u0440 SIM",
-   "options": "Sim Card",
-   "read_only": 1
-  },
-  {
-   "fieldname": "sim_tariff",
-   "fieldtype": "Link",
-   "label": "\u0422\u0430\u0440\u0438\u0444 SIM",
-   "options": "Mobile Tariff",
    "read_only": 1
   },
   {
@@ -219,10 +187,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 14:49:14.467424",
+ "modified": "2026-07-17 16:17:39.217678",
  "modified_by": "Administrator",
  "module": "BAKR OS",
  "name": "BAKR Installation",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
