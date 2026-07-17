@@ -1,0 +1,162 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:iccid",
+ "creation": "2026-07-16 14:23:22.796445",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_kjvc",
+  "iccid",
+  "phone_number",
+  "column_break_euaw",
+  "operator",
+  "tariff",
+  "section_break_kxtw",
+  "received_date",
+  "status",
+  "column_break_vkky",
+  "activation_date",
+  "deactivation_date",
+  "section_break_lgyn",
+  "pin_2",
+  "pin_1",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_kjvc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "\u0423\u043d\u0438\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0438\u0434\u0435\u043d\u0442\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440 SIM-\u043a\u0430\u0440\u0442\u044b",
+   "fieldname": "iccid",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ICCID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "description": "\u041c\u043e\u0436\u0435\u0442 \u043f\u043e\u044f\u0432\u0438\u0442\u044c\u0441\u044f \u043f\u043e\u0441\u043b\u0435 \u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438",
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u041d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430"
+  },
+  {
+   "description": "\u0421\u043e\u0442\u043e\u0432\u044b\u0439 \u043e\u043f\u0435\u0440\u0430\u0442\u043e\u0440",
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "label": "\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440",
+   "options": "Mobile Operator",
+   "reqd": 1
+  },
+  {
+   "description": "\u0422\u0430\u0440\u0438\u0444 \u043e\u043f\u0435\u0440\u0430\u0442\u043e\u0440\u0430",
+   "fieldname": "tariff",
+   "fieldtype": "Link",
+   "label": "\u0422\u0430\u0440\u0438\u0444",
+   "link_filters": "[\n  [\"Mobile Tariff\", \"operator\", \"=\", \"eval:doc.operator\"],\n  [\"Mobile Tariff\", \"is_active\", \"=\", 1]\n]",
+   "options": "Mobile Tariff"
+  },
+  {
+   "default": "\u041f\u043e\u043b\u0443\u0447\u0435\u043d\u0430",
+   "description": "\u0422\u0435\u043a\u0443\u0449\u0438\u0439 \u0441\u0442\u0430\u0442\u0443\u0441 SIM-\u043a\u0430\u0440\u0442\u044b",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "\u0421\u0442\u0430\u0442\u0443\u0441",
+   "options": "\u041f\u043e\u043b\u0443\u0447\u0435\u043d\u0430\n\u041e\u0436\u0438\u0434\u0430\u0435\u0442 \u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438\n\u0410\u043a\u0442\u0438\u0432\u043d\u0430\n\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0430\n\u041f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0430\n\u0417\u0430\u0431\u043b\u043e\u043a\u0438\u0440\u043e\u0432\u0430\u043d\u0430\n\u0423\u0442\u0435\u0440\u044f\u043d\u0430\n\u0421\u043f\u0438\u0441\u0430\u043d\u0430",
+   "reqd": 1
+  },
+  {
+   "description": "\u041a\u043e\u0433\u0434\u0430 SIM-\u043a\u0430\u0440\u0442\u0430 \u043f\u043e\u0441\u0442\u0443\u043f\u0438\u043b\u0430",
+   "fieldname": "received_date",
+   "fieldtype": "Date",
+   "label": "\u0414\u0430\u0442\u0430 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f"
+  },
+  {
+   "description": "\u041a\u043e\u0433\u0434\u0430 \u043e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u0430\u043a\u0442\u0438\u0432\u0438\u0440\u043e\u0432\u0430\u043b \u043a\u0430\u0440\u0442\u0443",
+   "fieldname": "activation_date",
+   "fieldtype": "Date",
+   "label": "\u0414\u0430\u0442\u0430 \u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438"
+  },
+  {
+   "description": "\u041a\u043e\u0433\u0434\u0430 \u043a\u0430\u0440\u0442\u0430 \u0431\u044b\u043b\u0430 \u043e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0430",
+   "fieldname": "deactivation_date",
+   "fieldtype": "Date",
+   "label": "\u0414\u0430\u0442\u0430 \u0434\u0435\u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438"
+  },
+  {
+   "fieldname": "pin_1",
+   "fieldtype": "Data",
+   "label": "PIN 1"
+  },
+  {
+   "fieldname": "pin_2",
+   "fieldtype": "Data",
+   "label": "PIN 2"
+  },
+  {
+   "description": "\u0417\u0430\u043c\u0435\u0442\u043a\u0438",
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "\u041f\u0440\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u0435"
+  },
+  {
+   "fieldname": "column_break_euaw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kxtw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_vkky",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_lgyn",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-16 17:29:14.875295",
+ "modified_by": "Administrator",
+ "module": "BAKR OS",
+ "name": "Sim Card",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "iccid",
+ "track_changes": 1
+}

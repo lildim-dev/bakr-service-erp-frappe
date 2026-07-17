@@ -1,7 +1,7 @@
 {
  "app": "bakr_os",
  "charts": [],
- "content": "[{\"id\":\"PSM4P-HaYJ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\">\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u0438</span>\",\"col\":12}},{\"id\":\"CPXAw9b4st\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0414\u0438\u043b\u0435\u0440\u0441\u043a\u0438\u0435 \u0446\u0435\u043d\u0442\u0440\u044b\",\"col\":4}},{\"id\":\"1p83RPrHEV\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0411\u0430\u043d\u043a\u0438\",\"col\":4}},{\"id\":\"AH_txI661o\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0422\u0440\u0435\u043a\u0435\u0440\u044b\",\"col\":4}},{\"id\":\"bdF7wZSPyX\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u0438\",\"col\":4}}]",
+ "content": "[{\"id\":\"PSM4P-HaYJ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\">\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a\u0438</span>\",\"col\":12}},{\"id\":\"CPXAw9b4st\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0414\u0438\u043b\u0435\u0440\u0441\u043a\u0438\u0435 \u0446\u0435\u043d\u0442\u0440\u044b\",\"col\":4}},{\"id\":\"1p83RPrHEV\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0424\u0438\u043d\u0430\u043d\u0441\u044b\",\"col\":4}},{\"id\":\"AH_txI661o\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0422\u0440\u0435\u043a\u0435\u0440\u044b\",\"col\":4}},{\"id\":\"bdF7wZSPyX\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u0438\",\"col\":4}},{\"id\":\"ryFKxdTWUC\",\"type\":\"card\",\"data\":{\"card_name\":\"\u0421\u0432\u044f\u0437\u044c\",\"col\":4}}]",
  "creation": "2026-07-16 12:38:18.737404",
  "custom_blocks": [],
  "docstatus": 0,
@@ -29,25 +29,6 @@
    "label": "\u0414\u0438\u043b\u0435\u0440\u0441\u043a\u0438\u0435 \u0446\u0435\u043d\u0442\u0440\u044b",
    "link_count": 0,
    "link_to": "Dealer Center",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "\u0411\u0430\u043d\u043a\u0438",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "\u0411\u0430\u043d\u043a\u0438",
-   "link_count": 0,
-   "link_to": "BAKR Bank",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -109,9 +90,57 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0424\u0438\u043d\u0430\u043d\u0441\u044b",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0411\u0430\u043d\u043a\u0438",
+   "link_count": 0,
+   "link_to": "BAKR Bank",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0421\u0432\u044f\u0437\u044c",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440\u044b",
+   "link_count": 0,
+   "link_to": "Mobile Operator",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "\u0422\u0430\u0440\u0438\u0444\u044b",
+   "link_count": 0,
+   "link_to": "Mobile Tariff",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2026-07-16 12:49:45.438343",
+ "modified": "2026-07-16 14:10:05.576886",
  "modified_by": "Administrator",
  "module": "BAKR OS",
  "name": "Reference",

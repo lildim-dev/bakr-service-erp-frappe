@@ -7,12 +7,14 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "\u043e\u043f\u0435\u0440\u0430\u0442\u043e\u0440",
+  "operator",
   "monthly_fee",
   "description",
   "column_break_cvyf",
   "tariff_name",
-  "internet_gb"
+  "internet_gb",
+  "sim_cost",
+  "is_active"
  ],
  "fields": [
   {
@@ -24,14 +26,6 @@
    "unique": 1
   },
   {
-   "fieldname": "\u043e\u043f\u0435\u0440\u0430\u0442\u043e\u0440",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440",
-   "options": "Mobile Operator",
-   "reqd": 1
-  },
-  {
    "fieldname": "monthly_fee",
    "fieldtype": "Currency",
    "label": "\u0410\u0431\u043e\u043d\u0435\u043d\u0442\u0441\u043a\u0430\u044f \u043f\u043b\u0430\u0442\u0430"
@@ -39,7 +33,7 @@
   {
    "fieldname": "internet_gb",
    "fieldtype": "Float",
-   "label": "\u041e\u0431\u044a\u0435\u043c \u0442\u0440\u0430\u0444\u0438\u043a\u0430"
+   "label": "\u041e\u0431\u044a\u0435\u043c \u0442\u0440\u0430\u0444\u0438\u043a\u0430, \u0413\u0431"
   },
   {
    "fieldname": "description",
@@ -49,12 +43,33 @@
   {
    "fieldname": "column_break_cvyf",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sim_cost",
+   "fieldtype": "Currency",
+   "label": "\u0421\u0442\u043e\u0438\u043c\u043e\u0441\u0442\u044c SIM-\u043a\u0430\u0440\u0442\u044b",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "\u0410\u043a\u0442\u0438\u0432\u0435\u043d",
+   "reqd": 1
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440",
+   "options": "Mobile Operator",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-15 17:58:32.619764",
+ "modified": "2026-07-16 15:36:13.795642",
  "modified_by": "Administrator",
  "module": "BAKR OS",
  "name": "Mobile Tariff",

@@ -12,9 +12,21 @@
    "icon": "boxes",
    "indent": 0,
    "keep_closed": 0,
-   "label": "BAKR OS",
+   "label": "Bakr OS",
    "link_to": "BAKR OS",
    "link_type": "Workspace",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "map-pin-plus-inside",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438",
+   "link_to": "BAKR Installation",
+   "link_type": "DocType",
    "show_arrow": 0,
    "type": "Link"
   },
@@ -31,7 +43,7 @@
    "type": "Link"
   }
  ],
- "modified": "2026-07-16 13:23:58.890793",
+ "modified": "2026-07-17 13:10:52.026763",
  "modified_by": "Administrator",
  "module": "BAKR OS",
  "name": "BAKR OS",

@@ -1,0 +1,246 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-17 12:26:27.094872",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_khls",
+  "installation_date",
+  "dealer_center",
+  "column_break_juho",
+  "activation_date",
+  "status",
+  "section_break_qwe",
+  "tracker_serial_no",
+  "tracker_item",
+  "sim_number",
+  "column_break_emff",
+  "iccid",
+  "sim_card",
+  "sim_tariff",
+  "section_break_auto",
+  "vin",
+  "vehicle_brand",
+  "vehicle_model",
+  "vehicle_year",
+  "vehicle_color",
+  "column_break_widh",
+  "owner_name",
+  "license_plate",
+  "owner_phone",
+  "\u0431\u0430\u043d\u043a_\u0438_\u043a\u0440\u0435\u0434\u0438\u0442_section",
+  "bank",
+  "loan_end_date",
+  "loan_agreement_number",
+  "column_break_hucu",
+  "loan_start_date",
+  "loan_term_months"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_khls",
+   "fieldtype": "Section Break",
+   "label": "\u041e\u0431\u0449\u0438\u0435 \u0434\u0430\u043d\u043d\u044b\u0435"
+  },
+  {
+   "fieldname": "installation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u0414\u0430\u0442\u0430 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dealer_center",
+   "fieldtype": "Link",
+   "label": "\u0414\u0438\u043b\u0435\u0440\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440",
+   "options": "Dealer Center"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "\u0421\u0442\u0430\u0442\u0443\u0441",
+   "options": "\u0427\u0435\u0440\u043d\u043e\u0432\u0438\u043a\n\u041e\u0436\u0438\u0434\u0430\u0435\u0442 \u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438\n\u0410\u043a\u0442\u0438\u0432\u043d\u0430\n\u041f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0430\n\u0414\u0435\u043c\u043e\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0430\n\u0417\u0430\u043a\u0440\u044b\u0442\u0430"
+  },
+  {
+   "fieldname": "activation_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "\u0414\u0430\u0442\u0430 \u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_qwe",
+   "fieldtype": "Section Break",
+   "label": "\u041e\u0431\u043e\u0440\u0443\u0434\u043e\u0432\u0430\u043d\u0438\u0435"
+  },
+  {
+   "fieldname": "tracker_serial_no",
+   "fieldtype": "Link",
+   "label": "\u0422\u0440\u0435\u043a\u0435\u0440",
+   "options": "Serial No"
+  },
+  {
+   "fetch_from": "tracker_serial_no.item_code",
+   "fieldname": "tracker_item",
+   "fieldtype": "Link",
+   "label": "\u041c\u043e\u0434\u0435\u043b\u044c \u0442\u0440\u0435\u043a\u0435\u0440\u0430",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sim_card",
+   "fieldtype": "Link",
+   "label": "SIM-\u043a\u0430\u0440\u0442\u0430",
+   "options": "Sim Card",
+   "read_only": 1
+  },
+  {
+   "fieldname": "iccid",
+   "fieldtype": "Data",
+   "label": "ICCID",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "sim_card.phone_number",
+   "fieldname": "sim_number",
+   "fieldtype": "Link",
+   "label": "\u041d\u043e\u043c\u0435\u0440 SIM",
+   "options": "Sim Card",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sim_tariff",
+   "fieldtype": "Link",
+   "label": "\u0422\u0430\u0440\u0438\u0444 SIM",
+   "options": "Mobile Tariff",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_auto",
+   "fieldtype": "Section Break",
+   "label": "\u0410\u0432\u0442\u043e\u043c\u043e\u0431\u0438\u043b\u044c"
+  },
+  {
+   "fieldname": "vin",
+   "fieldtype": "Data",
+   "label": "VIN",
+   "read_only": 1
+  },
+  {
+   "fieldname": "license_plate",
+   "fieldtype": "Data",
+   "label": "\u0413\u043e\u0441\u043d\u043e\u043c\u0435\u0440",
+   "read_only": 1
+  },
+  {
+   "fieldname": "owner_name",
+   "fieldtype": "Data",
+   "label": "\u0424\u0418\u041e \u0432\u043b\u0430\u0434\u0435\u043b\u044c\u0446\u0430"
+  },
+  {
+   "fieldname": "owner_phone",
+   "fieldtype": "Data",
+   "label": "\u0422\u0435\u043b\u0435\u0444\u043e\u043d"
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "label": "\u0411\u0430\u043d\u043a",
+   "options": "BAKR Bank"
+  },
+  {
+   "fieldname": "loan_agreement_number",
+   "fieldtype": "Data",
+   "label": "\u041d\u043e\u043c\u0435\u0440 \u0434\u043e\u0433\u043e\u0432\u043e\u0440\u0430"
+  },
+  {
+   "fieldname": "loan_start_date",
+   "fieldtype": "Date",
+   "label": "\u0414\u0430\u0442\u0430 \u043a\u0440\u0435\u0434\u0438\u0442\u0430"
+  },
+  {
+   "fieldname": "loan_term_months",
+   "fieldtype": "Int",
+   "label": "\u0421\u0440\u043e\u043a \u043a\u0440\u0435\u0434\u0438\u0442\u0430, \u043c\u0435\u0441\u044f\u0446\u0435\u0432"
+  },
+  {
+   "fieldname": "loan_end_date",
+   "fieldtype": "Date",
+   "label": "\u0414\u0430\u0442\u0430 \u043e\u043a\u043e\u043d\u0447\u0430\u043d\u0438\u044f",
+   "read_only": 1
+  },
+  {
+   "fieldname": "\u0431\u0430\u043d\u043a_\u0438_\u043a\u0440\u0435\u0434\u0438\u0442_section",
+   "fieldtype": "Section Break",
+   "label": "\u0411\u0430\u043d\u043a \u0438 \u043a\u0440\u0435\u0434\u0438\u0442"
+  },
+  {
+   "fieldname": "column_break_hucu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_widh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_emff",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_juho",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle_brand",
+   "fieldtype": "Link",
+   "label": "\u041c\u0430\u0440\u043a\u0430",
+   "options": "Vehicle Brand"
+  },
+  {
+   "fieldname": "vehicle_model",
+   "fieldtype": "Link",
+   "label": "\u041c\u043e\u0434\u0435\u043b\u044c",
+   "link_filters": "[\n  [\"Vehicle Model\", \"brand\", \"=\", \"eval:doc.vehicle_brand\"]\n]",
+   "options": "Vehicle Model"
+  },
+  {
+   "fieldname": "vehicle_year",
+   "fieldtype": "Data",
+   "label": "\u0413\u043e\u0434 \u0432\u044b\u043f\u0443\u0441\u043a\u0430"
+  },
+  {
+   "fieldname": "vehicle_color",
+   "fieldtype": "Data",
+   "label": "\u0426\u0432\u0435\u0442"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-17 14:49:14.467424",
+ "modified_by": "Administrator",
+ "module": "BAKR OS",
+ "name": "BAKR Installation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
