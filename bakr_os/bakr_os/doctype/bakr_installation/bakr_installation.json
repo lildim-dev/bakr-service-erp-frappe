@@ -51,13 +51,15 @@
    "fieldname": "dealer_center",
    "fieldtype": "Link",
    "label": "\u0414\u0438\u043b\u0435\u0440\u0441\u043a\u0438\u0439 \u0446\u0435\u043d\u0442\u0440",
-   "options": "Dealer Center"
+   "options": "Dealer Center",
+   "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "\u0421\u0442\u0430\u0442\u0443\u0441",
-   "options": "\u0427\u0435\u0440\u043d\u043e\u0432\u0438\u043a\n\u041e\u0436\u0438\u0434\u0430\u0435\u0442 \u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438\n\u0410\u043a\u0442\u0438\u0432\u043d\u0430\n\u041f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0430\n\u0414\u0435\u043c\u043e\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0430\n\u0417\u0430\u043a\u0440\u044b\u0442\u0430"
+   "options": "\u0427\u0435\u0440\u043d\u043e\u0432\u0438\u043a\n\u041e\u0436\u0438\u0434\u0430\u0435\u0442 \u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438\n\u0410\u043a\u0442\u0438\u0432\u043d\u0430\n\u041f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0430\n\u0414\u0435\u043c\u043e\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u0430\n\u0417\u0430\u043a\u0440\u044b\u0442\u0430",
+   "reqd": 1
   },
   {
    "fieldname": "activation_date",
@@ -75,7 +77,8 @@
    "fieldname": "tracker_serial_no",
    "fieldtype": "Link",
    "label": "\u0422\u0440\u0435\u043a\u0435\u0440",
-   "options": "Serial No"
+   "options": "Serial No",
+   "reqd": 1
   },
   {
    "fetch_from": "tracker_serial_no.item_code",
@@ -94,7 +97,8 @@
    "fieldname": "vin",
    "fieldtype": "Data",
    "label": "VIN",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "license_plate",
@@ -187,7 +191,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-17 16:17:39.217678",
+ "modified": "2026-07-17 16:51:02.417801",
  "modified_by": "Administrator",
  "module": "BAKR OS",
  "name": "BAKR Installation",

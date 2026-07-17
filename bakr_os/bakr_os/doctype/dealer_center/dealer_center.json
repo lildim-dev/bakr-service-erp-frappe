@@ -9,11 +9,11 @@
  "field_order": [
   "section_break_ccn4",
   "dealer_name",
-  "legal_name",
-  "contact_person",
+  "customer",
   "column_break_gmcd",
   "city",
-  "country"
+  "country",
+  "contact_person"
  ],
  "fields": [
   {
@@ -50,16 +50,17 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "legal_name",
-   "fieldtype": "Data",
+   "fieldname": "customer",
+   "fieldtype": "Link",
    "label": "\u042e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435",
+   "options": "Customer",
    "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-16 12:26:59.108028",
+ "modified": "2026-07-17 17:48:53.339453",
  "modified_by": "Administrator",
  "module": "BAKR OS",
  "name": "Dealer Center",
