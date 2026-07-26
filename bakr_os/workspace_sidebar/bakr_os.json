@@ -31,13 +31,13 @@
    "type": "Link"
   },
   {
-   "child": 0,
+   "child": 1,
    "collapsible": 1,
-   "icon": "map-pin-plus",
+   "icon": "banknote-arrow-down",
    "indent": 0,
    "keep_closed": 0,
-   "label": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438",
-   "link_to": "BAKR Installation",
+   "label": "\u041f\u043b\u0430\u0442\u0435\u0436\u0438",
+   "link_to": "Payment Entry",
    "link_type": "DocType",
    "show_arrow": 0,
    "type": "Link"
@@ -57,6 +57,30 @@
   {
    "child": 0,
    "collapsible": 1,
+   "icon": "map-pin-plus",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438",
+   "link_to": "BAKR Installation",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "square-play",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "\u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0438",
+   "link_to": "Subscription",
+   "link_type": "DocType",
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
    "icon": "stock",
    "indent": 0,
    "keep_closed": 0,
@@ -67,7 +91,7 @@
    "type": "Link"
   }
  ],
- "modified": "2026-07-22 11:24:25.969003",
+ "modified": "2026-07-23 17:12:13.876539",
  "modified_by": "Administrator",
  "module": "BAKR OS",
  "name": "BAKR OS",

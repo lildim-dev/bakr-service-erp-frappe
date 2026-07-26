@@ -29,10 +29,17 @@
   "\u0431\u0430\u043d\u043a_\u0438_\u043a\u0440\u0435\u0434\u0438\u0442_section",
   "bank",
   "loan_term_months",
-  "loan_agreement_number",
+  "billing_customer",
   "column_break_hucu",
   "loan_start_date",
-  "loan_end_date"
+  "loan_end_date",
+  "loan_agreement_number",
+  "subscription_tab",
+  "subscription_plan",
+  "subscription_start_date",
+  "subscription_duration",
+  "subscription_end_date",
+  "subscription"
  ],
  "fields": [
   {
@@ -189,12 +196,52 @@
    "fieldname": "vehicle_color",
    "fieldtype": "Data",
    "label": "\u0426\u0432\u0435\u0442"
+  },
+  {
+   "fieldname": "subscription_plan",
+   "fieldtype": "Link",
+   "label": "\u041f\u043b\u0430\u043d \u043f\u043e\u0434\u043f\u0438\u0441\u043a\u0438",
+   "options": "Subscription Plan"
+  },
+  {
+   "fieldname": "subscription_duration",
+   "fieldtype": "Int",
+   "label": "\u0421\u0440\u043e\u043a",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subscription_end_date",
+   "fieldtype": "Date",
+   "label": "\u0414\u0430\u0442\u0430 \u043e\u043a\u043e\u043d\u0447\u0430\u043d\u0438\u044f",
+   "read_only": 1
+  },
+  {
+   "fieldname": "subscription_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430"
+  },
+  {
+   "fieldname": "subscription_start_date",
+   "fieldtype": "Date",
+   "label": "\u0414\u0430\u0442\u0430 \u043d\u0430\u0447\u0430\u043b\u0430"
+  },
+  {
+   "fieldname": "subscription",
+   "fieldtype": "Link",
+   "label": "\u041f\u043e\u0434\u043f\u0438\u0441\u043a\u0430",
+   "options": "Subscription"
+  },
+  {
+   "fieldname": "billing_customer",
+   "fieldtype": "Link",
+   "label": "\u041f\u043b\u0430\u0442\u0435\u043b\u044c\u0449\u0438\u043a",
+   "options": "Customer"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-07-23 10:17:51.317722",
+ "modified": "2026-07-26 22:06:02.524885",
  "modified_by": "Administrator",
  "module": "BAKR OS",
  "name": "BAKR Installation",
