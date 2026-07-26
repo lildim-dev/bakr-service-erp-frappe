@@ -56,10 +56,19 @@ class BAKRInstallation(Document):
 
         subscription.insert()
 
+        frappe.db.set_value(
+            "BAKR Installation",
+            self.name,
+            {
+                "subscription": subscription.name,
+                "subscription_duration": duration,
+                "subscription_end_date": end_date,
+            },
+        )
+
         self.subscription = subscription.name
         self.subscription_duration = duration
         self.subscription_end_date = end_date
-        self.save(ignore_permissions=True)
 
         frappe.msgprint(
             _("Подписка {0} успешно создана.").format(subscription.name),
